@@ -28,6 +28,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
     .forEach runs a given function for each elemt in an array, .map runs a given function on each element and returns a new array
+
 2. Explain the difference between a callback and a higher order function.
 
     A call back function is a function that can be used inside of a higher order function as a parameter or in the code block to increase the higher order function's usefullness
@@ -37,6 +38,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
     closure is a way for a function to use a variable(s) in the parent scope after the parent function has closed; the "lexical scope" of the function and the variables it uses
 
 4. Describe the four rules of the 'this' keyword.
+
     1. when 'this' is used in global scope, this keyword refers to the Window/console Object
     2. when 'this' is called with dot notation, the Object to the left of the dot gets 'this'
     3. when 'this' is used in a constructor, it refer to the instance of the created object
