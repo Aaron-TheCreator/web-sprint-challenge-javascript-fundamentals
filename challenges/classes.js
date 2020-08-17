@@ -21,7 +21,7 @@
 //   };  
 
 
-class CuboidMaker {
+class CuboidMaker1 {
     constructor(attr) {
         this.length = attr.l;
         this.width = attr.w;
@@ -39,6 +39,21 @@ class CuboidMaker {
     };
 
 };
+
+class Cuboid1 extends CuboidMaker1 {
+    constructor(l, w, h) {
+        super(l , w, h);
+    };
+};
+
+const rectPr1 = new Cuboid1({
+    l: 2,
+    w: 5,
+    h: 10,
+});
+
+console.log(rectPr1.volume());
+console.log(rectPr1.surfaceArea());
 
 
 
