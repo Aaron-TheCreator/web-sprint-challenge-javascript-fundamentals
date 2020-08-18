@@ -29,7 +29,7 @@ function summation(a) {
   let counter = 0;
 
   for (i = 0; i <= a; i++) {
-    counter = counter + i;
+    counter += i;
     
   }
   return counter;

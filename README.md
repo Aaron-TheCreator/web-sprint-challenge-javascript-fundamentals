@@ -47,6 +47,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 5. Why do we need super() in an extended class?
 
     the super() method in extended classes replaces the line of code in standard constructor prototype syntax "Object2.prototype = Object.create(Object.prototype)"
+    super() allows the child prototype to access the Parent properties
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 

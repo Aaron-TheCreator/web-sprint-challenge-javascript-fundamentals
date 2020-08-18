@@ -35,8 +35,7 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 
 */
 
-const lowCaseAnimalNames = [];
-zooAnimals.map(function(e) {
+const lowCaseAnimalNames = zooAnimals.map(function(e) {
   lowCaseAnimalNames.push(e.animal_name.toLowerCase());
   return lowCaseAnimalNames;
 });
@@ -59,9 +58,16 @@ console.log(lowPopulationAnimals);
 The zoos need to know their total animal population across the United States. Find the total population from all the zoos using the .reduce() method. Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
 
 */
-let populationTotal = zooAnimals.reduce(function(accumulator, currentVal) {
-  this.population + currentVal === accumulator;
-},0);
+
+let populationTotal = 0;
+populationTotal = zooAnimals.reduce((accum, items) => {
+    return (accum = accum + items.population);
+  }, 0);
+console.log("Request 4 to use array.reduce():", populationTotal);
+
+// let populationTotal = zooAnimals.reduce(function(accumulator, currentVal) {
+//   this.population + currentVal === accumulator;
+// },0);
 
 console.log(populationTotal);
 
